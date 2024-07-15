@@ -1,0 +1,39 @@
+﻿@model AssignmentEmployeeDetails.Models.UpdateEmployeeViewModel
+@{
+}
+<h1> UPDATE EMPLOYEE</h1>
+<form method="Post" action="Update" class="mt-2">
+    <div class="mb-3">
+    <label for="" class="form-label">Id</label>
+    <input type="number" class="form-control" asp-for="Id">
+      </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Name</label>
+    <input type="text" class="form-control" asp-for="Name">
+      </div>
+      <div class="mb-3">
+    <label for="" class="form-label">EmailId</label>
+    <input type="email" class="form-control" asp-for="EmailId">
+      </div>
+      <div class="mb-3">
+    <label for="" class="form-label">Date Of Birth</label>
+    <input type="date" class="form-control" asp-for="DateOfBirth">
+      </div>
+      <div class="mb-3">
+    <label for="" class="form-label">Department</label>
+    <input type="text" class="form-control" asp-for="Department">
+      </div>
+      <div class="mb-3">
+    <label for="" class="form-label">Salary</label>
+    <input type="number" class="form-control" asp-for="Salary">
+      </div>
+      <div class="mb-3">
+    <label for="" class="form-label">experience</label>
+    <input type="number" class="form-control" asp-for="experience">
+      </div>
+  
+  <button type="update" class="btn btn-primary"asp-action="">Update</button>
+  <button type="submit" class="btn btn-danger"
+  asp-action=""
+  asp-controller="Employees">Delete</button>
+</form>
